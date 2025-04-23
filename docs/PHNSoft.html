@@ -6,9 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <meta name="generator" content="Google Web Designer 16.3.0.0407">
+
+  <!-- Thư Viện -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.1/dist/tesseract.min.js"></script>
+
   <!-- Liên kết đến file CSS ngoài -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -26,16 +32,17 @@
         <input type="password" id="password" name="password" placeholder="Enter your password" required>
       </div>
 
-      <button type="submit" class="btn-login">Login</button>
+      <!-- Thêm id="loginButton" vào nút này -->
+      <button type="button" id="loginButton" class="btn-login">Login</button>
 
       <div class="forgot-password">
         <a href="https://example.com/forgot-password">Forgot your password?</a>
       </div>
     </form>
   </div>
-  
+
   <!-- Liên kết đến file JavaScript ngoài -->
-  <script src="gettransaction.js" defer></script>
+  <script src="mbank.js" defer></script>
 
 </body>
 
